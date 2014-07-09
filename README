@@ -1,0 +1,10 @@
+#how to use
+
+#load environment variables
+/home/filiperosset/app/wls12/user_projects/domains/base_domain/bin/setDomainEnv.sh
+
+#decrypt weblogic password example (welcome1)
+/home/filiperosset/app/wls12/wlserver/common/bin/wlst.sh decryptPassword.py /home/filiperosset/app/wls12/user_projects/domains/base_domain {AES}Eph/CO7QWRBPLqgAbIlVS1/+JQoUK3qzfcn1zJQpz74\=
+
+#decrypt jdbc password example (teste123)
+/home/filiperosset/app/wls12/wlserver/common/bin/wlst.sh decryptPassword.py /home/filiperosset/app/wls12/user_projects/domains/base_domain {AES}MZiQ5dMKMdm+Z6thij3jeV6VkcqmOe5lxOpfrURc62s=
